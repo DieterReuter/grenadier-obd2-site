@@ -5,6 +5,19 @@
 
 ---
 
+## Versioning Convention
+
+| Stage | Version | Description |
+|---|---|---|
+| Alpha-0 | 0.8.0 | First TestFlight, invited alpha testers only |
+| Alpha-1 | 0.8.1 | First iteration based on Alpha-0 feedback |
+| Alpha-2 | 0.8.2 | Second iteration |
+| Beta | 0.9.0 | Broader TestFlight, feature complete |
+| Release Candidate | 0.9.x | Final polish before App Store |
+| App Store Launch | 1.0.0 | Public release |
+
+---
+
 ## App Information (App Store Connect)
 
 | Field | Value |
@@ -29,7 +42,7 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ---
 
-## What to Test
+## What to Test (per build, in TestFlight → Builds)
 
 This is an early exploratory build — your feedback directly shapes the next version of the app.
 
@@ -106,6 +119,6 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 
 ## Version History
 
-| Version | Build | Date | Notes |
-|---|---|---|---|
-| 0.8.0 | 1 | 2026-05-24 | First TestFlight submission |
+| Version | Build | Date | Stage | Notes |
+|---|---|---|---|---|
+| 0.8.0 | 1 | 2026-05-24 | Alpha-0 | First TestFlight, invited alpha testers only |
