@@ -1,0 +1,118 @@
+# TestFlight EULA — Grenadier OBD2
+# Paste this text into App Store Connect → TestFlight → License Agreement
+# Last updated: May 24, 2026
+---
+
+GRENADIER OBD2 — END USER LICENSE AGREEMENT (ALPHA)
+
+IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THIS APP. BY TAPPING "ACCEPT" YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE APP.
+
+---
+
+1. PRE-RELEASE SOFTWARE
+
+This app is Alpha-stage, pre-release software provided exclusively for testing and evaluation purposes. It is not a finished product. It may contain bugs, errors, incomplete features, or behave in unexpected ways. You accept all risks associated with the use of pre-release software.
+
+---
+
+2. LICENSE GRANT
+
+The developer grants you a limited, non-exclusive, non-transferable, revocable license to install and use this app solely for testing and evaluation purposes on Apple devices that you own or control, and as permitted by the Apple TestFlight Terms of Service.
+
+---
+
+3. RESTRICTIONS
+
+You may not:
+- Copy, modify, or distribute the app or any part of it
+- Reverse engineer, decompile, or disassemble the app
+- Use the app for any commercial purpose
+- Transfer, sublicense, or lend the app to any third party
+- Use the app while driving or operating a vehicle
+- Use the app to access any vehicle you do not own or have explicit permission to access
+
+---
+
+4. READ-ONLY ACCESS
+
+This app is designed exclusively to read and display diagnostic data from your vehicle via the OBD2 interface. It does not write data to, modify, or reprogram any vehicle ECU or system. However, as with any software that communicates with vehicle systems, the developer cannot guarantee that unexpected behaviour will not occur in this pre-release stage.
+
+---
+
+5. SAFETY
+
+You acknowledge and agree that:
+- You will only use this app when your vehicle is stationary and parked in a safe location
+- You will not use this app in remote areas where roadside assistance is unavailable
+- You accept the recommendation to test near an INEOS dealer or authorised workshop so that professional help is close by if needed
+- You will never use this app while driving
+
+---
+
+6. FEEDBACK
+
+Any feedback, bug reports, or suggestions you provide during testing may be used by the developer to improve the app without any obligation to you. You retain no intellectual property rights over feedback you provide.
+
+---
+
+7. CONFIDENTIALITY
+
+This app and all related materials are confidential pre-release software. You agree not to publicly disclose, publish, review, or share screenshots, recordings, or descriptions of the app without prior written consent from the developer.
+
+---
+
+8. PRIVACY
+
+Your use of this app is governed by the Privacy Policy available at:
+https://dieterreuter.github.io/grenadier-obd2-site/privacy-policy.html
+
+By accepting this agreement you also acknowledge and accept the Privacy Policy.
+
+---
+
+9. DISCLAIMER OF WARRANTIES
+
+THIS APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY OF VEHICLE DATA, OR UNINTERRUPTED OPERATION. THE DEVELOPER DOES NOT WARRANT THAT THE APP WILL FUNCTION WITHOUT ERRORS OR THAT ANY DEFECTS WILL BE CORRECTED.
+
+---
+
+10. LIMITATION OF LIABILITY
+
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM:
+- YOUR USE OF OR INABILITY TO USE THE APP
+- ANY VEHICLE MALFUNCTION, DAMAGE, OR BREAKDOWN OCCURRING DURING OR AFTER APP USE
+- INACCURATE OR INCOMPLETE DIAGNOSTIC DATA DISPLAYED BY THE APP
+- LOSS OF DATA OR UNAUTHORISED ACCESS TO DATA
+- ANY OTHER MATTER RELATING TO THE APP
+
+WHERE LIABILITY CANNOT BE EXCLUDED BY LAW — INCLUDING UNDER GERMAN LAW (§ 521 BGB) FOR SOFTWARE PROVIDED FREE OF CHARGE — LIABILITY IS LIMITED TO CASES OF GROSS NEGLIGENCE OR WILFUL MISCONDUCT ONLY.
+
+---
+
+11. TERMINATION
+
+This license is effective until terminated. The developer may terminate this license at any time without notice. Upon termination you must immediately cease all use of the app and delete all copies from your devices.
+
+---
+
+12. GOVERNING LAW
+
+This Agreement is governed by the laws of the Federal Republic of Germany, without regard to its conflict of law provisions. Any disputes arising from this Agreement shall be subject to the exclusive jurisdiction of the courts of Germany.
+
+---
+
+13. ENTIRE AGREEMENT
+
+This Agreement, together with the Privacy Policy and Terms of Use available at https://dieterreuter.github.io/grenadier-obd2-site/, constitutes the entire agreement between you and the developer regarding the app and supersedes all prior agreements.
+
+---
+
+By tapping "Accept" you confirm that:
+- You have read and understood this Agreement
+- You are at least 18 years of age
+- You have lawful access to the INEOS Grenadier vehicle you intend to connect to
+- You accept all terms and conditions set out above
+
+---
+
+Contact: dieter.reuter@icloud.com
