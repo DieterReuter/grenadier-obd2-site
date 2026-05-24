@@ -201,6 +201,36 @@
     .contact-block a:hover {
       text-decoration: underline;
     }
+
+    .warning-box {
+      background: #fffbf0;
+      border: 2px solid #e8a020;
+      border-radius: 6px;
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+
+    .warning-box .warning-title {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #b07000;
+      margin-bottom: 16px;
+    }
+
+    .warning-box p {
+      color: #5a3e00;
+      margin-bottom: 12px;
+    }
+
+    .warning-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .warning-box ul li {
+      color: #5a3e00;
+    }
   </style>
 </head>
 <body>
@@ -303,6 +333,26 @@
 
     <h2>Changes to This Policy</h2>
     <p>If we make material changes to this privacy policy, we will update the "Last updated" date above and notify users via the app. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
+    <hr class="divider">
+
+    <h2>Disclaimer &amp; Safety Warning</h2>
+
+    <div class="warning-box">
+      <div class="warning-title">⚠ Alpha Software — Read Before Use</div>
+      <p>Grenadier OBD2 is currently in <strong>Alpha stage</strong>. It is an early, unfinished version of the software provided exclusively for testing purposes. Use it at your own risk.</p>
+      <p><strong>This app is designed to read vehicle data only.</strong> It does not send commands, modify settings, or write any data to your vehicle's ECUs. However, as with any software that communicates with vehicle systems, unexpected behaviour cannot be fully excluded in this early stage.</p>
+      <p><strong>We strongly recommend:</strong></p>
+      <ul>
+        <li>Do not use this Alpha app when you are in a remote location or far from assistance</li>
+        <li>Test at home, on your driveway, or in a safe stationary environment</li>
+        <li>Ideally test near an INEOS dealer or authorised workshop — so professional help is close by if needed</li>
+        <li>Never use this app while driving</li>
+      </ul>
+      <p>The app is provided <strong>"as is"</strong>, without warranty of any kind, express or implied. The developer accepts no liability for any damage, malfunction, data loss, or any other consequence arising from the use of this Alpha software.</p>
+    </div>
+
+    <hr class="divider">
 
     <footer>
       <h2>Contact</h2>
