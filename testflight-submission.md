@@ -49,9 +49,12 @@ This is an early exploratory build — your feedback directly shapes the next ve
 **Recommended BLE OBD2 Devices**
 - vLinker BM+ — fully compatible, recommended
 - vLinker MC+ — fully compatible, recommended
-- OBDLink CX — compatible with minor limitations
 
-Please test with a physical INEOS Grenadier and one of the BLE OBD2 dongles listed above. We'd love to know:
+**Additional BLE OBD2 Devices**
+- OBDLink CX — limited support, more testing required
+- Vgate iCar Pro Bluetooth 4.0 (BLE) — limited support, more testing required
+
+Please test with a physical INEOS Grenadier and one of the recommended BLE OBD2 dongles listed above. We'd love to know:
 - Does the BLE Discovery find your OBD2 dongle reliably?
 - Does the app connect successfully and show the live voltage reading?
 - Is your VIN read and displayed correctly after turning on the ignition?
@@ -86,7 +89,10 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 > **Recommended BLE OBD2 Devices**
 > - vLinker BM+ — fully compatible, recommended
 > - vLinker MC+ — fully compatible, recommended
-> - OBDLink CX — compatible with minor limitations
+>
+> **Additional BLE OBD2 Devices**
+> - OBDLink CX — limited support, more testing required
+> - Vgate iCar Pro Bluetooth 4.0 (BLE) — limited support, more testing required
 >
 > **Getting Started**
 > 1. Plug your BLE OBD2 dongle into the vehicle's OBD2 port — leave the ignition off for now
@@ -109,11 +115,12 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 
 ## Recommended BLE OBD2 Devices (Reference)
 
-| Device | Status | Notes |
-|---|---|---|
-| vLinker BM+ | ✅ Fully compatible | Recommended |
-| vLinker MC+ | ✅ Fully compatible | Recommended |
-| OBDLink CX | ⚠️ Mostly compatible | Some limitations |
+| BLE Device Name | Product Name | Status | Notes |
+|---|---|---|---|
+| vLinker BM-IOS | vLinker BM+ | ✅ Fully compatible | Recommended |
+| vLinker MC-IOS | vLinker MC+ | ✅ Fully compatible | Recommended |
+| OBDLink CX | OBDLink CX | ✅ Fully compatible | limited support, more testing required |
+| IOS-Vlink | Vgate iCar Pro Bluetooth 4.0 (BLE) | ✅ Fully compatible | limited support, more testing required |
 
 ---
 
