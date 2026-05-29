@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** May 24, 2026
+**Last updated:** May 29, 2026
 
 ---
 
@@ -44,6 +44,37 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight → Builds)
 
+### v0.8.2 (Alpha-2)
+
+This build focuses on vehicle identification improvements — your feedback on accuracy is key.
+
+**What's new in 0.8.2**
+
+- **ECU Inventory** — DDE and DME are now shown as a single entry. Before VIN is read it shows "DDE/DME — Diesel/Petrol". Once your VIN is read it updates to the correct name and variant label
+- **Drive** — LHD or RHD is now correctly detected from your VIN and shown in Grenadier Details
+- **Engine Type** — correct BMW engine code shown (B57D30 for Diesel, B58B30 for Petrol)
+- **Hide VIN** — new privacy toggle in Settings, replaces last 5 digits with 00000 for screenshots
+
+**Please test and confirm:**
+- Does the Drive field show correctly for your vehicle (LHD or RHD)?
+- Does the ECU Inventory header show the correct variant (Diesel or Petrol) after VIN is read?
+- Does the DDE or DME label update correctly once your VIN is read?
+- Does Hide VIN work correctly — do the last 5 digits show as 00000?
+
+**Recommended BLE OBD2 Devices**
+- vLinker BM+ — fully compatible, recommended
+- vLinker MC+ — fully compatible, recommended
+- Vgate iCar Pro Bluetooth 4.0 BLE — fully compatible, recommended
+
+**Additional BLE OBD2 Devices**
+- OBDLink CX — limited support, more testing required
+
+All vehicle data collected is fully anonymised — your VIN is never stored alongside your vehicle metrics.
+
+---
+
+### v0.8.1 (Alpha-1)
+
 This is an early exploratory build — your feedback directly shapes the next version of the app.
 
 **Recommended BLE OBD2 Devices**
@@ -52,7 +83,7 @@ This is an early exploratory build — your feedback directly shapes the next ve
 
 **Additional BLE OBD2 Devices**
 - OBDLink CX — limited support, more testing required
-- Vgate iCar Pro Bluetooth 4.0 (BLE) — limited support, more testing required
+- Vgate iCar Pro Bluetooth 4.0 BLE — limited support, more testing required
 
 Please test with a physical INEOS Grenadier and one of the recommended BLE OBD2 dongles listed above. We'd love to know:
 - Does the BLE Discovery find your OBD2 dongle reliably?
@@ -89,7 +120,7 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 > **Recommended BLE OBD2 Devices**
 > - vLinker BM+ — fully compatible, recommended
 > - vLinker MC+ — fully compatible, recommended
-> - Vgate iCar Pro Bluetooth 4.0 (BLE) — fully compatible, recommended
+> - Vgate iCar Pro Bluetooth 4.0 BLE — fully compatible, recommended
 >
 > **Additional BLE OBD2 Devices**
 > - OBDLink CX — limited support, more testing required
@@ -129,3 +160,5 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | Version | Build | Date | Stage | Notes |
 |---|---|---|---|---|
 | 0.8.0 | 1 | 2026-05-24 | Alpha-0 | First TestFlight, invited alpha testers only |
+| 0.8.1 | — | 2026-05-25 | Alpha-1 | Petrol detection, Drive removed, Vehicle UUID, ECU DME/DDE placeholder |
+| 0.8.2 | — | 2026-05-29 | Alpha-2 | ECU DME/DDE single entry, Hide VIN, Drive LHD/RHD, Engine type fix |
