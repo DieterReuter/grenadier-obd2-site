@@ -89,10 +89,10 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 > **Recommended BLE OBD2 Devices**
 > - vLinker BM+ — fully compatible, recommended
 > - vLinker MC+ — fully compatible, recommended
+> - Vgate iCar Pro Bluetooth 4.0 (BLE) — fully compatible, recommended
 >
 > **Additional BLE OBD2 Devices**
 > - OBDLink CX — limited support, more testing required
-> - Vgate iCar Pro Bluetooth 4.0 (BLE) — limited support, more testing required
 >
 > **Getting Started**
 > 1. Plug your BLE OBD2 dongle into the vehicle's OBD2 port — leave the ignition off for now
@@ -119,8 +119,8 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 |---|---|---|---|
 | vLinker BM-IOS | vLinker BM+ | ✅ Fully compatible | Recommended |
 | vLinker MC-IOS | vLinker MC+ | ✅ Fully compatible | Recommended |
+| IOS-Vlink | Vgate iCar Pro Bluetooth 4.0 (BLE) | ✅ Fully compatible | Recommended |
 | OBDLink CX | OBDLink CX | ✅ Fully compatible | limited support, more testing required |
-| IOS-Vlink | Vgate iCar Pro Bluetooth 4.0 (BLE) | ✅ Fully compatible | limited support, more testing required |
 
 ---
 
