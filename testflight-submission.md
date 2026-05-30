@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** May 29, 2026
+**Last updated:** May 30, 2026
 
 ---
 
@@ -44,25 +44,29 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight → Builds)
 
-### v0.8.2 (Alpha-2)
+### v0.8.2 updated (Alpha-2)
 
-This build focuses on vehicle identification improvements — your feedback on accuracy is key.
+This build focuses on vehicle identification improvements and a new My Grenadier configuration screen.
 
 **What's new in 0.8.2**
 
+- **My Grenadier** — a new screen to configure your exact vehicle setup. Tap "My Grenadier" on the main screen after connecting to your Grenadier. The app pre-fills what it can from your VIN — just confirm or correct the details and save. This helps us improve VIN decoding for every Grenadier owner worldwide!
+- **Country** — select your country from a full searchable list with flag emojis
 - **ECU Inventory** — DDE and DME are now shown as a single entry. Before VIN is read it shows "DDE/DME — Diesel/Petrol". Once your VIN is read it updates to the correct name and variant label
-- **FCM (Front Camera Module)** — added to ECU Inventory for MY24+ vehicles. If you have a MY24 or newer, please confirm if FCM shows as online after Probe ECUs
+- **FCM (Front Camera Module)** — added to ECU Inventory for MY24+ vehicles
 - **Drive** — LHD or RHD is now correctly detected from your VIN and shown in Grenadier Details
 - **Engine Type** — correct BMW engine code shown (B57D30 for Diesel, B58B30 for Petrol)
 - **Hide VIN** — new privacy toggle in Settings, replaces last 5 digits with 00000 for screenshots
 
 **Please test and confirm:**
+- Does My Grenadier pre-fill your model year, body style, engine and drive correctly?
+- Does the country field pre-select your country from iOS settings?
+- Does the Confirm & Save button only activate when you change something?
 - Does the Drive field show correctly for your vehicle (LHD or RHD)?
-- Does the ECU Inventory header show the correct variant (Diesel or Petrol) after VIN is read?
-- Does the DDE or DME label update correctly once your VIN is read?
+- Does the ECU Inventory show the correct Diesel or Petrol label after VIN is read?
+- MY24+ only: Does FCM show as online in the ECU Inventory after Probe ECUs?
+- US cars: Does FCM now appear in your ECU list? We know it was missing before!
 - Does Hide VIN work correctly — do the last 5 digits show as 00000?
-- **MY24+ only:** Does FCM show as online in the ECU Inventory after Probe ECUs?
-- **US cars:** Does FCM now appear in your ECU list? We know it was missing before!
 
 **Recommended BLE OBD2 Devices**
 - vLinker BM+ — fully compatible, recommended
@@ -83,10 +87,10 @@ This is an early exploratory build — your feedback directly shapes the next ve
 **Recommended BLE OBD2 Devices**
 - vLinker BM+ — fully compatible, recommended
 - vLinker MC+ — fully compatible, recommended
-- Vgate iCar Pro Bluetooth 4.0 BLE — fully compatible, recommended
 
 **Additional BLE OBD2 Devices**
 - OBDLink CX — limited support, more testing required
+- Vgate iCar Pro Bluetooth 4.0 BLE — limited support, more testing required
 
 Please test with a physical INEOS Grenadier and one of the recommended BLE OBD2 dongles listed above. We'd love to know:
 - Does the BLE Discovery find your OBD2 dongle reliably?
@@ -164,4 +168,5 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 |---|---|---|---|---|
 | 0.8.0 | 1 | 2026-05-24 | Alpha-0 | First TestFlight, invited alpha testers only |
 | 0.8.1 | — | 2026-05-25 | Alpha-1 | Petrol detection, Drive removed, Vehicle UUID, ECU DME/DDE placeholder |
-| 0.8.2 | — | 2026-05-29 | Alpha-2 | ECU DME/DDE single entry, FCM added, Hide VIN, Drive LHD/RHD, Engine type fix |
+| 0.8.2 | 17 | 2026-05-29 | Alpha-2 | ECU DME/DDE single entry, Hide VIN, Drive LHD/RHD, Engine type fix, FCM |
+| 0.8.2 | 18+ | 2026-05-30 | Alpha-2 updated | My Grenadier screen, country field, vehicleConfig logging |
