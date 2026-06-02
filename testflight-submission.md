@@ -44,7 +44,25 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight → Builds)
 
-### v0.8.2 updated (Alpha-2)
+### v0.8.2 build 19 (Alpha-2b)
+
+This build adds UX improvements to the My Grenadier screen based on Alpha-2 tester feedback.
+
+**What's new in build 19**
+
+- **My Grenadier guided workflow** — the My Grenadier card on the main screen now shows a clear 3-step guide: 1. Probe ECUs → 2. Fill in My Grenadier and submit → 3. Run ECU Discovery. Following this order gives us the best data!
+- **Nudge badge** — an orange dot appears on the My Grenadier card when your vehicle is connected but you haven't submitted your configuration yet. It disappears once submitted.
+- **Picker layout** — the picker fields in My Grenadier are now easier to read with a smaller font and better spacing
+
+**Please test and confirm:**
+- Does the orange dot appear on My Grenadier when connected but not yet submitted?
+- Does the orange dot disappear after submitting My Grenadier?
+- Are the picker fields easier to read and use?
+- Does the 3-step guide appear correctly on the My Grenadier card?
+
+---
+
+### v0.8.2 build 18 (Alpha-2)
 
 This build focuses on vehicle identification improvements and a new My Grenadier configuration screen.
 
@@ -169,4 +187,5 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.0 | 1 | 2026-05-24 | Alpha-0 | First TestFlight, invited alpha testers only |
 | 0.8.1 | — | 2026-05-25 | Alpha-1 | Petrol detection, Drive removed, Vehicle UUID, ECU DME/DDE placeholder |
 | 0.8.2 | 17 | 2026-05-29 | Alpha-2 | ECU DME/DDE single entry, Hide VIN, Drive LHD/RHD, Engine type fix, FCM |
-| 0.8.2 | 18+ | 2026-05-30 | Alpha-2 updated | My Grenadier screen, country field, vehicleConfig logging |
+| 0.8.2 | 18 | 2026-05-30 | Alpha-2 | My Grenadier screen, country field, vehicleConfig logging |
+| 0.8.2 | 19 | 2026-06-02 | Alpha-2b | Picker font fix, nudge badge, CTA guided workflow |
