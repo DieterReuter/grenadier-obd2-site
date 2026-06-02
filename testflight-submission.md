@@ -54,11 +54,12 @@ This build adds UX improvements to the My Grenadier screen based on Alpha-2 test
 - **Nudge badge** — an orange dot appears on the My Grenadier card when your vehicle is connected but you haven't submitted your configuration yet. It disappears once submitted.
 - **Picker layout** — the picker fields in My Grenadier are now easier to read with a smaller font and better spacing
 
-**Please test and confirm:**
-- Does the orange dot appear on My Grenadier when connected but not yet submitted?
-- Does the orange dot disappear after submitting My Grenadier?
-- Are the picker fields easier to read and use?
-- Does the 3-step guide appear correctly on the My Grenadier card?
+Please follow these 3 steps after connecting your Grenadier:
+1. Probe ECUs
+2. Fill in My Grenadier and submit
+3. Run ECU Discovery
+
+Then explore the app and let us know what you think!
 
 ---
 
