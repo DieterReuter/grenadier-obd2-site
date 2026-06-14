@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** May 30, 2026
+**Last updated:** June 14, 2026
 
 ---
 
@@ -12,6 +12,7 @@
 | Alpha-0 | 0.8.0 | First TestFlight, invited alpha testers only |
 | Alpha-1 | 0.8.1 | First iteration based on Alpha-0 feedback |
 | Alpha-2 | 0.8.2 | Second iteration |
+| Alpha-3 | 0.8.3 | Third iteration |
 | Beta | 0.9.0 | Broader TestFlight, feature complete |
 | Release Candidate | 0.9.x | Final polish before App Store |
 | App Store Launch | 1.0.0 | Public release |
@@ -43,6 +44,55 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 ---
 
 ## What to Test (per build, in TestFlight → Builds)
+
+### v0.8.3 (Alpha-3)
+
+**Focus:** ECU Discovery & Details, TPMS, My Grenadier
+
+**What's New / Fixed in This Build**
+
+- **Fixed:** ACM and BCM CAN addresses were swapped throughout the app — ECU names and addresses are now correct (ACM=0x688/0x608, BCM=0x681/0x601)
+- **New:** TPMS Information screen — read tyre sensor IDs, live pressure and temperature (bar/psi, °C/°F), plus reference pressure
+- **New:** Tap any tyre on the TPMS screen for Tyre Sensor Details (full sensor ID for cloning, pressure/temp, car position pictogram)
+- **New:** TPMS results are cached on your phone — you can review the last reading even offline, without being connected to the car
+- **New:** My Grenadier — added Seating (5-Seater / 2-Seater), simplified Type of Use (Passenger / Commercial / Quartermaster / Prototype), added MY22 and MY27 to Model Year
+- **Changed:** My Grenadier now saves automatically when you leave the screen — no more separate "Confirm & Save" button
+- **Updated:** VIN decoding — covers more markets, model years and prototype VINs
+
+**Test Steps**
+
+1. Connect to your Grenadier and verify VIN is read correctly
+2. Probe ECUs — confirm all ECUs show as online
+3. ECU Discovery (Settings → ECU Discovery → Scan)
+   - Verify all ECUs found (17 on Diesel, 16 on Petrol — even more on MY24/25/26)
+   - EGS, GWS shown green with EX: address
+   - SCR shown on Diesel, absent on Petrol
+   - Confirm ACM and BCM both show online with correct addresses
+4. Read Details on every ECU — tap Details on each one and wait for it to complete
+   - Look for green checkmark after each read
+   - Report any ECU that shows all — or fails to read
+5. TPMS Information (main screen card)
+   - Tap "Read TPMS Sensor Details" with ignition ON
+   - Check all 5 sensor IDs, pressures (bar/psi) and temps (°C/°F) match your head unit's tyre pressure screen
+   - Tap a tyre card to open Tyre Sensor Details — check the car pictogram highlights the correct wheel
+   - Close the app and reopen TPMS — confirm last reading is still shown
+6. Vehicle Details — check all rows look correct for your car
+7. My Grenadier — set Seating, Type of Use, Market, Trim, Country, then leave the screen and reopen — confirm everything was saved
+8. Then explore the app and let us know what you think!
+
+**Please Report**
+- Which adapter you're using
+- Any ECU that failed to read Details
+- Any TPMS sensor ID, pressure or temperature that looks wrong
+- Anything that looks wrong or unexpected
+
+**Recommended BLE OBD2 Adapters**
+- vLinker BM+ (vLinker BM-IOS) — recommended
+- vLinker MC+ (vLinker MC-IOS) — recommended
+- Vgate iCar Pro BLE (IOS-Vlink) — recommended
+- OBDLink CX — works
+
+---
 
 ### v0.8.2 build 19 (Alpha-2b)
 
@@ -190,3 +240,4 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.2 | 17 | 2026-05-29 | Alpha-2 | ECU DME/DDE single entry, Hide VIN, Drive LHD/RHD, Engine type fix, FCM |
 | 0.8.2 | 18 | 2026-05-30 | Alpha-2 | My Grenadier screen, country field, vehicleConfig logging |
 | 0.8.2 | 19 | 2026-06-02 | Alpha-2b | Picker font fix, nudge badge, CTA guided workflow |
+| 0.8.3 | — | 2026-06-14 | Alpha-3 | ACM/BCM address swap fix, TPMS feature (sensor IDs, pressure, temp, Tyre Sensor Details), My Grenadier Seating/Type of Use redesign, auto-save on exit, VIN decoding update |
