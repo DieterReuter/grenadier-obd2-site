@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** June 14, 2026
+**Last updated:** June 20, 2026
 
 ---
 
@@ -13,6 +13,7 @@
 | Alpha-1 | 0.8.1 | First iteration based on Alpha-0 feedback |
 | Alpha-2 | 0.8.2 | Second iteration |
 | Alpha-3 | 0.8.3 | Third iteration |
+| Alpha-4 | 0.8.4 | Fourth iteration |
 | Beta | 0.9.0 | Broader TestFlight, feature complete |
 | Release Candidate | 0.9.x | Final polish before App Store |
 | App Store Launch | 1.0.0 | Public release |
@@ -33,7 +34,7 @@
 ## Beta App Information
 
 **Beta App Description:**
-Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners. Using a standard Bluetooth Low Energy (BLE) ELM327 OBD2 adapter, the app connects directly to your vehicle to read live sensor data, explore your Grenadier's unique configuration, and retrieve fault codes — all from your iPhone. This first release focuses on discovery: understanding the full range of Grenadier configurations worldwide to build a richer, more powerful experience in the next version.
+Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners. Using a standard Bluetooth Low Energy (BLE) ELM327 OBD2 adapter, the app connects directly to your vehicle to read live sensor data, explore your Grenadier's unique configuration, and retrieve fault codes -- all from your iPhone. This first release focuses on discovery: understanding the full range of Grenadier configurations worldwide to build a richer, more powerful experience in the next version.
 
 **Feedback Email:** dieter.reuter@icloud.com
 
@@ -43,7 +44,80 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ---
 
-## What to Test (per build, in TestFlight → Builds)
+## What to Test (per build, in TestFlight -> Builds)
+
+### v0.8.4 (Alpha-4)
+
+What to Test -- Alpha-4 (v0.8.4)
+
+Focus: PDF Diagnosis Report, Odometer, Stability
+
+What's New in This Build
+
+- NEW: Export Diagnosis Report -- a new button on the main screen
+  generates a PDF with your vehicle details and tyre sensor IDs.
+  Share it via email, AirDrop, or save to Files.
+- NEW: Odometer reading shown in km and miles on the main screen,
+  read directly from the ECU (BCM, DDE and Head Unit all cross-checked)
+- Improved: Connect flow is faster -- VIN and odometer read in under 2 seconds
+- Improved: ECU Discovery and ECU Details -- faster, more reliable, all ECUs covered
+- Improved: TPMS reads are more reliable
+
+Test Steps
+
+1. Connect to your Grenadier and verify VIN is read correctly
+2. Check the odometer shows your current km and miles -- compare
+   with your dashboard, both should match
+3. My Grenadier -- fill in your exact vehicle details now, before
+   generating the PDF, as this data will be printed in the report
+   - Model Year: your MY (e.g. MY23, MY24, MY25, MY26)
+   - Body Style: Standard 5-Seater, Standard 2-Seater,
+     Quartermaster, or Quartermaster Chassis Cab
+   - Engine: Diesel or Petrol
+   - Drive: LHD or RHD
+   - Trim: Field, Adventure, Trailmaster, or Fieldmaster
+   - Country: your country
+   - Market: your market (e.g. EU, UK, US, AU)
+   - Leave the screen -- it saves automatically
+   - Reopen My Grenadier and confirm everything was saved correctly
+4. TPMS Information (main screen card)
+   - Tap "Read TPMS Sensor Details" with ignition ON
+   - Check all 5 sensor IDs and pressures match your head unit
+   - Tap a tyre card to open Tyre Sensor Details -- check the car
+     pictogram highlights the correct wheel
+   - Close the app and reopen TPMS -- confirm last reading is still shown
+5. Export Diagnosis Report (NEW!)
+   - Tap "Export Diagnosis Report" on the main screen
+   - Wait a few seconds while the PDF is generated
+   - Share it via email or AirDrop to check it looks correct
+   - Verify your VIN, model year, engine, odometer km/miles,
+     My Grenadier details and TPMS sensor IDs are all correct
+6. ECU Discovery (tap ECU Discovery)
+   - Verify all ECUs found (17 on Diesel, 16 on Petrol --
+     even more on MY24/25/26)
+   - EGS, GWS shown green with EX: address
+   - SCR shown on Diesel, absent on Petrol
+7. Read Details on at least a few ECUs -- look for green checkmark
+   after each read, report any ECU that fails
+8. Vehicle Details -- check all rows look correct for your car
+9. Then explore the app and let us know what you think!
+
+Please Report
+
+- Which adapter you are using
+- Whether the PDF export worked and the data looks correct
+- Any odometer reading that looks wrong (check against your dashboard)
+- Any ECU that failed to read Details
+- Any TPMS sensor ID or pressure that looks wrong
+- Anything that looks wrong or unexpected
+
+Recommended BLE OBD2 Adapters
+- vLinker BM+ (vLinker BM-IOS) -- recommended
+- vLinker MC+ (vLinker MC-IOS) -- recommended
+- Vgate iCar Pro BLE (IOS-Vlink) -- recommended
+- OBDLink CX -- works
+
+---
 
 ### v0.8.3 (Alpha-3)
 
@@ -224,10 +298,10 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 
 | BLE Device Name | Product Name | Status | Notes |
 |---|---|---|---|
-| vLinker BM-IOS | vLinker BM+ | ✅ Fully compatible | Recommended |
-| vLinker MC-IOS | vLinker MC+ | ✅ Fully compatible | Recommended |
-| IOS-Vlink | Vgate iCar Pro Bluetooth 4.0 (BLE) | ✅ Fully compatible | Recommended |
-| OBDLink CX | OBDLink CX | ✅ Fully compatible | limited support, more testing required |
+| vLinker BM-IOS | vLinker BM+ | Fully compatible | Recommended |
+| vLinker MC-IOS | vLinker MC+ | Fully compatible | Recommended |
+| IOS-Vlink | Vgate iCar Pro Bluetooth 4.0 (BLE) | Fully compatible | Recommended |
+| OBDLink CX | OBDLink CX | Fully compatible | works |
 
 ---
 
@@ -236,8 +310,9 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | Version | Build | Date | Stage | Notes |
 |---|---|---|---|---|
 | 0.8.0 | 1 | 2026-05-24 | Alpha-0 | First TestFlight, invited alpha testers only |
-| 0.8.1 | — | 2026-05-25 | Alpha-1 | Petrol detection, Drive removed, Vehicle UUID, ECU DME/DDE placeholder |
+| 0.8.1 | -- | 2026-05-25 | Alpha-1 | Petrol detection, Drive removed, Vehicle UUID, ECU DME/DDE placeholder |
 | 0.8.2 | 17 | 2026-05-29 | Alpha-2 | ECU DME/DDE single entry, Hide VIN, Drive LHD/RHD, Engine type fix, FCM |
 | 0.8.2 | 18 | 2026-05-30 | Alpha-2 | My Grenadier screen, country field, vehicleConfig logging |
 | 0.8.2 | 19 | 2026-06-02 | Alpha-2b | Picker font fix, nudge badge, CTA guided workflow |
-| 0.8.3 | — | 2026-06-14 | Alpha-3 | ACM/BCM address swap fix, TPMS feature (sensor IDs, pressure, temp, Tyre Sensor Details), My Grenadier Seating/Type of Use redesign, auto-save on exit, VIN decoding update |
+| 0.8.3 | -- | 2026-06-14 | Alpha-3 | ACM/BCM address swap fix, TPMS feature (sensor IDs, pressure, temp, Tyre Sensor Details), My Grenadier Seating/Type of Use redesign, auto-save on exit, VIN decoding update |
+| 0.8.4 | -- | 2026-06-20 | Alpha-4 | PDF Diagnosis Report export, Odometer reading (BCM+DDE+HU majority vote), connect flow faster, ECU Discovery + Details stability improvements |
