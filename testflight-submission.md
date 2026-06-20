@@ -101,7 +101,7 @@ Test Steps
    - SCR shown on Diesel, absent on Petrol
 7. Read Details on at least a few ECUs -- look for green checkmark
    after each read, report any ECU that fails
-8. Vehicle Details -- check all rows look correct for your car
+8. Grenadier Details -- check all rows look correct for your car
 9. Then explore the app and let us know what you think!
 
 Please Report
