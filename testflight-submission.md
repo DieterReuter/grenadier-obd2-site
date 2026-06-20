@@ -59,6 +59,8 @@ What's New in This Build
   Share it via email, AirDrop, or save to Files.
 - NEW: Odometer reading shown in km and miles on the main screen,
   read directly from the ECU (BCM, DDE and Head Unit all cross-checked)
+- Improved: Now supports iOS 17 and later -- older iPhones and iPads
+  (iPhone XS / XR and newer) can now run the app
 - Improved: Connect flow is faster -- VIN and odometer read in under 2 seconds
 - Improved: ECU Discovery and ECU Details -- faster, more reliable, all ECUs covered
 - Improved: TPMS reads are more reliable
