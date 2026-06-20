@@ -77,7 +77,7 @@ Test Steps
      Quartermaster, or Quartermaster Chassis Cab
    - Engine: Diesel or Petrol
    - Drive: LHD or RHD
-   - Trim: Field, Adventure, Trailmaster, or Fieldmaster
+   - Trim: Standard, Fieldmaster, Trialmaster, Trialmaster X, 1924 Edition, or Black Edition
    - Country: your country
    - Market: your market (e.g. EU, UK, US, AU)
    - Leave the screen -- it saves automatically
