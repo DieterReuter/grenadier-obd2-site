@@ -50,15 +50,16 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 What to Test -- Alpha-4 (v0.8.4)
 
-Focus: PDF Diagnosis Report, Odometer, TPMS Information, Stability
+Focus: PDF Diagnosis Report, Odometer, Service Reminder, TPMS Information, Stability
 
 What's New in This Build
 
 - NEW: Export Diagnosis Report -- a new button on the main screen
-  generates a PDF with your vehicle details and tyre sensor IDs.
+  generates a PDF with your vehicle details, service reminder and tyre sensor IDs.
   Share it via email, AirDrop, or save to Files.
 - NEW: Odometer reading shown in km and miles on the main screen,
   read directly from the ECU (BCM, DDE and Head Unit all cross-checked)
+- NEW: Service Reminder - just have a look
 - Improved: Connect flow is faster -- VIN and odometer read in under 2 seconds
 - Improved: TPMS reads are more reliable
 
@@ -79,27 +80,34 @@ Test Steps
    - Market: your market (e.g. EU, UK, US, AU)
    - Leave the screen -- it saves automatically
    - Reopen My Grenadier and confirm everything was saved correctly
-4. TPMS Information (main screen card)
+4. Service Reminder (main screen card)
+   - Tap "Read Service Details" with ignition ON
+   - Check card "Remaining Until Service" data
+   - Compare with the details from for Head Unit
+   - If there is a difference in Days and Engine Hours, 
+     click on Calibrate and correct those values!
+   - Close the app and reopen Service Reminder -- confirm last reading is still shown
+5. TPMS Information (main screen card)
    - Tap "Read TPMS Sensor Details" with ignition ON
    - Check all 5 sensor IDs and pressures match your head unit
    - Tap a tyre card to open Tyre Sensor Details -- check the car
      pictogram highlights the correct wheel
    - Close the app and reopen TPMS -- confirm last reading is still shown
-5. Export Diagnosis Report (NEW!)
+6. Export Diagnosis Report (NEW!)
    - Tap "Export Diagnosis Report" on the main screen
    - Wait a few seconds while the PDF is generated
    - Share it via email or AirDrop to check it looks correct
    - Verify your VIN, model year, engine, odometer km/miles,
      My Grenadier details and TPMS sensor IDs are all correct
-6. Grenadier Details -- check all rows look correct for your car
-7. Then explore the app and let us know what you think!
+7. Grenadier Details -- check all rows look correct for your car
+8. Then explore the app and let us know what you think!
 
 Please Report
 
 - Which adapter you are using
 - Whether the PDF export worked and the data looks correct
 - Any odometer reading that looks wrong (check against your dashboard)
-- Any ECU that failed to read Details
+- Any Details in Service Reminder are wrong
 - Any TPMS sensor ID or pressure that looks wrong
 - Anything that looks wrong or unexpected
 
