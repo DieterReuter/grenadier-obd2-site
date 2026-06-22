@@ -50,7 +50,7 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 What to Test -- Alpha-4 (v0.8.4)
 
-Focus: PDF Diagnosis Report, Odometer, Stability
+Focus: PDF Diagnosis Report, Odometer, TPMS Information, Stability
 
 What's New in This Build
 
@@ -59,10 +59,7 @@ What's New in This Build
   Share it via email, AirDrop, or save to Files.
 - NEW: Odometer reading shown in km and miles on the main screen,
   read directly from the ECU (BCM, DDE and Head Unit all cross-checked)
-- Improved: Now supports iOS 17 and later -- older iPhones and iPads
-  (iPhone XS / XR and newer) can now run the app
 - Improved: Connect flow is faster -- VIN and odometer read in under 2 seconds
-- Improved: ECU Discovery and ECU Details -- faster, more reliable, all ECUs covered
 - Improved: TPMS reads are more reliable
 
 Test Steps
@@ -94,15 +91,8 @@ Test Steps
    - Share it via email or AirDrop to check it looks correct
    - Verify your VIN, model year, engine, odometer km/miles,
      My Grenadier details and TPMS sensor IDs are all correct
-6. ECU Discovery (tap ECU Discovery)
-   - Verify all ECUs found (17 on Diesel, 16 on Petrol --
-     even more on MY24/25/26)
-   - EGS, GWS shown green with EX: address
-   - SCR shown on Diesel, absent on Petrol
-7. Read Details on at least a few ECUs -- look for green checkmark
-   after each read, report any ECU that fails
-8. Grenadier Details -- check all rows look correct for your car
-9. Then explore the app and let us know what you think!
+6. Grenadier Details -- check all rows look correct for your car
+7. Then explore the app and let us know what you think!
 
 Please Report
 
@@ -113,11 +103,11 @@ Please Report
 - Any TPMS sensor ID or pressure that looks wrong
 - Anything that looks wrong or unexpected
 
-Recommended BLE OBD2 Adapters
-- vLinker BM+ (vLinker BM-IOS) -- recommended
-- vLinker MC+ (vLinker MC-IOS) -- recommended
-- Vgate iCar Pro BLE (IOS-Vlink) -- recommended
-- OBDLink CX -- works
+Recommended BLE OBD2 Adapters (BLE device name)
+- vLinker BM+ (vLinker BM-IOS)
+- vLinker MC+ (vLinker MC-IOS)
+- Vgate iCar Pro BLE (IOS-Vlink)
+- OBDLink CX (OBDLink CX)
 
 ---
 
