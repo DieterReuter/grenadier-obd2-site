@@ -46,11 +46,14 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
-### v0.8.4 (Alpha-4)
+### v0.8.4b (Alpha-4)
 
-What to Test -- Alpha-4 (v0.8.4)
+What to Test -- Alpha-4b (v0.8.4)
 
 Focus: PDF Diagnosis Report, Odometer, Service Reminder, TPMS Information, Stability
+
+Fixed in Alpha-4b
+- Service Reminder has been reworked — please test and calibrate again!
 
 What's New in This Build
 
