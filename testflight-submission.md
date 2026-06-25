@@ -46,11 +46,16 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
-### v0.8.4b (Alpha-4)
+### v0.8.4 (Alpha-4d)
 
-What to Test -- Alpha-4c (v0.8.4)
+What to Test -- Alpha-4d (v0.8.4)
 
 Focus: PDF Diagnosis Report, Odometer, Service Reminder, TPMS Information, Stability
+
+Fixed in Alpha-4d
+- Engine Hours fixed for DME/Petrol
+- overall bugs and race conditions removed
+- ECU Discovery/ECU Details works more stable and reliable
 
 Fixed in Alpha-4c
 - Service Reminder got some bug fixes  — please test and calibrate again!
