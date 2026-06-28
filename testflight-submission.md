@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** June 20, 2026
+**Last updated:** June 28, 2026
 
 ---
 
@@ -46,11 +46,17 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
-### v0.8.4 (Alpha-4d)
+### v0.8.4 (Alpha-4e)
 
-What to Test -- Alpha-4d (v0.8.4)
+What to Test -- Alpha-4e (v0.8.4)
 
 Focus: PDF Diagnosis Report, Odometer, Service Reminder, TPMS Information, Stability
+
+Fixed in Alpha-4e
+- Service Reminder: "More Details" now shows estimated last service date (useful when the dealer used a different service reset tool)
+- Service Reminder "Read Service Details" is somewhat slower, because of reading more DID details
+- TPMS "Read TPMS Sensor Details" is ~1.4 seconds faster
+- ECU Discovery is more stable — race condition causing occasional "CAN Bus Asleep" fixed
 
 Fixed in Alpha-4d
 - Engine Hours fixed for DME/Petrol
@@ -331,3 +337,4 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.2 | 19 | 2026-06-02 | Alpha-2b | Picker font fix, nudge badge, CTA guided workflow |
 | 0.8.3 | -- | 2026-06-14 | Alpha-3 | ACM/BCM address swap fix, TPMS feature (sensor IDs, pressure, temp, Tyre Sensor Details), My Grenadier Seating/Type of Use redesign, auto-save on exit, VIN decoding update |
 | 0.8.4 | -- | 2026-06-20 | Alpha-4 | PDF Diagnosis Report export, Odometer reading (BCM+DDE+HU majority vote), connect flow faster, ECU Discovery + Details stability improvements |
+| 0.8.4 | -- | 2026-06-28 | Alpha-4e | Petrol connect flow fix, CAN Bus Asleep after ECU Health Check fixed, Service Reminder + TPMS faster, Refresh buttons in ECU Info + Health Check detail, Est. Last Service date in Service Reminder |
