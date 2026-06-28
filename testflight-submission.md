@@ -61,11 +61,7 @@ Fixed in Alpha-5
   "65007 days remaining"
 - Service Reminder Calibrate: you can now enter overdue amounts — a Remaining/Overdue
   toggle appears per field when your service is past due
-- iPad: confirmation dialogs (DTC Clear, Erase History) now appear in dark theme
 - iPad: several screens previously showed as a narrow column — now display full-width
-- Fleet Management: registration plate is now editable while connected to your car
-- Fleet Management: you can now delete other vehicles' cards while connected
-- DTC History: new trash button in the DTC History view to clear one ECU's history
 
 Fixed in Alpha-4e
 - Service Reminder got some bug fixes — please test and calibrate again!
