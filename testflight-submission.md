@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** June 28, 2026
+**Last updated:** June 29, 2026
 
 ---
 
@@ -46,75 +46,62 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
-### v0.8.4 (Alpha-4e)
+### v0.8.5 (Alpha-5)
 
-What to Test -- Alpha-4e (v0.8.4)
+What to Test -- Alpha-5 (v0.8.5)
 
-Focus: PDF Diagnosis Report, Odometer, Service Reminder, TPMS Information, Stability
+Focus: Service Reminder overdue, iPad improvements, iOS 16.6 support
+
+What's New in Alpha-5
+- NEW: iOS 16.6 support — the app now works on iPhone 8 and newer (previously iPhone 12+)
+
+Fixed in Alpha-5
+- Service Reminder: if your service is overdue, the app now shows the correct overdue
+  amounts ("Time Overdue: 529 d") — previously it displayed a wrong large number like
+  "65007 days remaining"
+- Service Reminder Calibrate: you can now enter overdue amounts — a Remaining/Overdue
+  toggle appears per field when your service is past due
+- iPad: confirmation dialogs (DTC Clear, Erase History) now appear in dark theme
+- iPad: several screens previously showed as a narrow column — now display full-width
+- Fleet Management: registration plate is now editable while connected to your car
+- Fleet Management: you can now delete other vehicles' cards while connected
+- DTC History: new trash button in the DTC History view to clear one ECU's history
 
 Fixed in Alpha-4e
-- Service Reminder got some bug fixes  — please test and calibrate again!
-- Service Reminder: "More Details" now shows estimated last service date (useful when the dealer used a different service reset tool)
-- Service Reminder "Read Service Details" is somewhat slower, because of reading more DID details
+- Service Reminder got some bug fixes — please test and calibrate again!
+- Service Reminder: "More Details" now shows estimated last service date (useful when
+  the dealer used a different service reset tool)
+- Service Reminder "Read Service Details" is somewhat slower, because of reading more details
 - TPMS "Read TPMS Sensor Details" is ~1.4 seconds faster
 - ECU Discovery is more stable — race condition causing occasional "CAN Bus Asleep" fixed
-
-What's New in This Build
-
-- NEW: Export Diagnosis Report -- a new button on the main screen
-  generates a PDF with your vehicle details, service reminder and tyre sensor IDs.
-  Share it via email, AirDrop, or save to Files.
-- NEW: Odometer reading shown in km and miles on the main screen,
-  read directly from the ECU (BCM, DDE and Head Unit all cross-checked)
-- NEW: Service Reminder - just have a look
-- Improved: Connect flow is faster -- VIN and odometer read in under 2 seconds
-- Improved: TPMS reads are more reliable
 
 Test Steps
 
 1. Connect to your Grenadier and verify VIN is read correctly
-2. Check the odometer shows your current km and miles -- compare
-   with your dashboard, both should match
-3. My Grenadier -- fill in your exact vehicle details now, before
-   generating the PDF, as this data will be printed in the report
-   - Model Year: your MY (e.g. MY23, MY24, MY25, MY26)
-   - Body Style: Standard 5-Seater, Standard 2-Seater,
-     Quartermaster, or Quartermaster Chassis Cab
-   - Engine: Diesel or Petrol
-   - Drive: LHD or RHD
-   - Trim: Standard, Fieldmaster, Trialmaster, Trialmaster X, 1924 Edition, or Black Edition
-   - Country: your country
-   - Market: your market (e.g. EU, UK, US, AU)
-   - Leave the screen -- it saves automatically
-   - Reopen My Grenadier and confirm everything was saved correctly
-4. Service Reminder (main screen card)
+2. Service Reminder (main screen card)
    - Tap "Read Service Details" with ignition ON
-   - Check card "Remaining Until Service" data
-   - Compare with the details from for Head Unit
-   - If there is a difference in Days and Engine Hours, 
-     click on Calibrate and correct those values!
-   - Close the app and reopen Service Reminder -- confirm last reading is still shown
-5. TPMS Information (main screen card)
+   - If your service is overdue: check the card header shows "SERVICE OVERDUE"
+     and each overdue field shows "Time Overdue", "Distance Overdue" etc.
+   - If not overdue: check "Remaining Until Service" matches your head unit
+   - Tap Calibrate if any value differs from what your dashboard shows
+   - Close the app and reopen -- confirm the reading is still shown
+4. TPMS Information (main screen card)
    - Tap "Read TPMS Sensor Details" with ignition ON
    - Check all 5 sensor IDs and pressures match your head unit
-   - Tap a tyre card to open Tyre Sensor Details -- check the car
-     pictogram highlights the correct wheel
    - Close the app and reopen TPMS -- confirm last reading is still shown
-6. Export Diagnosis Report (NEW!)
+5. Export Diagnosis Report
    - Tap "Export Diagnosis Report" on the main screen
-   - Wait a few seconds while the PDF is generated
-   - Share it via email or AirDrop to check it looks correct
-   - Verify your VIN, model year, engine, odometer km/miles,
-     My Grenadier details and TPMS sensor IDs are all correct
-7. Grenadier Details -- check all rows look correct for your car
-8. Then explore the app and let us know what you think!
+   - Verify your VIN, odometer, My Grenadier details and TPMS sensor IDs are correct
+6. ECU Health Check → tap any ECU row → DTC History
+   - Tap the trash icon to clear that ECU's history — confirm it works
+7. Then explore the app and let us know what you think!
 
 Please Report
 
-- Which adapter you are using
-- Whether the PDF export worked and the data looks correct
-- Any odometer reading that looks wrong (check against your dashboard)
-- Any Details in Service Reminder are wrong
+- Which adapter you are using (BLE device name)
+- If your service is overdue: does the overdue display look correct?
+- If you are on iPad: do all screens display full-width and in dark theme?
+- Any Service Reminder values that look wrong compared to your dashboard
 - Any TPMS sensor ID or pressure that looks wrong
 - Anything that looks wrong or unexpected
 
@@ -324,3 +311,4 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.3 | -- | 2026-06-14 | Alpha-3 | ACM/BCM address swap fix, TPMS feature (sensor IDs, pressure, temp, Tyre Sensor Details), My Grenadier Seating/Type of Use redesign, auto-save on exit, VIN decoding update |
 | 0.8.4 | -- | 2026-06-20 | Alpha-4 | PDF Diagnosis Report export, Odometer reading (BCM+DDE+HU majority vote), connect flow faster, ECU Discovery + Details stability improvements |
 | 0.8.4 | -- | 2026-06-28 | Alpha-4e | Petrol connect flow fix, CAN Bus Asleep after ECU Health Check fixed, Service Reminder + TPMS faster, Refresh buttons in ECU Info + Health Check detail, Est. Last Service date in Service Reminder |
+| 0.8.5 | -- | 2026-06-29 | Alpha-5 | Service Reminder overdue support, iPad dark mode + full-width screens, Fleet Management fixes, DTC History per-ECU clear, iOS 16.6 support |
