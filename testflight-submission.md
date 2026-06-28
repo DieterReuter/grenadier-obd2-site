@@ -53,25 +53,11 @@ What to Test -- Alpha-4e (v0.8.4)
 Focus: PDF Diagnosis Report, Odometer, Service Reminder, TPMS Information, Stability
 
 Fixed in Alpha-4e
+- Service Reminder got some bug fixes  — please test and calibrate again!
 - Service Reminder: "More Details" now shows estimated last service date (useful when the dealer used a different service reset tool)
 - Service Reminder "Read Service Details" is somewhat slower, because of reading more DID details
 - TPMS "Read TPMS Sensor Details" is ~1.4 seconds faster
 - ECU Discovery is more stable — race condition causing occasional "CAN Bus Asleep" fixed
-
-Fixed in Alpha-4d
-- Engine Hours fixed for DME/Petrol
-- overall bugs and race conditions removed
-- ECU Discovery/ECU Details works more stable and reliable
-
-Fixed in Alpha-4c
-- Service Reminder got some bug fixes  — please test and calibrate again!
-- new data Engine Hours — total engine-running hours from the DDE/DME
-- new data Last Engine Run — date of last key-off
-- Odometer displays as one line
-- some other minor format changes in UI and Diagnosis Report
-
-Fixed in Alpha-4b
-- Service Reminder has been reworked — please test and calibrate again!
 
 What's New in This Build
 
