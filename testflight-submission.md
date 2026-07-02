@@ -96,6 +96,7 @@ Test Steps
    and ECU Discovery Details buttons are dimmed gray (not orange).
 6. Tap any feature card while a read is in progress → confirm the
    "Adapter busy — tap again" toast appears briefly at the bottom.
+7. Then explore the app and let us know what you think!
 
 Please Report
 - Did the adapter setup flow work smoothly on first launch?
