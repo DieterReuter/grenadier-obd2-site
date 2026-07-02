@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** June 29, 2026
+**Last updated:** July 2, 2026
 
 ---
 
@@ -46,9 +46,74 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
+### v0.8.6 (Alpha-6)
+
+What to Test — Alpha-6 (v0.8.6)
+
+Focus: First-run adapter onboarding, BLE stability, quality-of-life fixes
+
+What's New in Alpha-6
+- NEW: Guided adapter setup — on first launch the app walks you through
+  connecting your BLE OBD2 adapter step by step. All features are hidden
+  until your adapter is registered, so there's nothing confusing to tap.
+  Recommended adapters (OBDLink CX, vLinker BM+, vLinker MC+) are shown
+  right on the setup card.
+- NEW: "Adapter busy — tap again" toast — a small message now appears at
+  the bottom of the screen if you tap a feature while the adapter is mid-read,
+  instead of silently doing nothing.
+- NEW: ECU Discovery Details button dims to gray when the engine is running
+  (ECU identification requires engine off — the button now makes this obvious).
+- NEW: Informational banners on the main screen — if the engine is running,
+  ignition is off, or the adapter can't be found, a banner now explains why
+  and what to do. No more guessing why a feature isn't responding.
+
+Fixed in Alpha-6
+- BLE reconnect: turning ignition on/off after a BLE drop (going out of
+  range and back) could freeze the ignition state display — fixed.
+- Connect while engine running: if the engine was already running when the
+  app connected, it incorrectly showed "ignition off" for several seconds —
+  fixed.
+- TPMS: tapping Read when the adapter was busy showed "Not connected"
+  instead of "Adapter busy" — fixed.
+
+Test Steps
+
+1. IMPORTANT — Existing users: after installing this build the app will ask
+   you to set up your adapter again (once only). Go through the setup flow,
+   tap your adapter, wait for green, tap Add. Your cached data (Service
+   Reminder, TPMS, etc.) should all still be there.
+2. New users: follow the 5-step setup card on the main screen.
+   - Plug adapter into OBD2 port under dashboard
+   - Turn on ignition, keep engine off
+   - Tap Scan — your adapter should appear
+   - Tap it to test compatibility (wait for green)
+   - Tap Add — setup card disappears, full app revealed
+3. After setup: connect to your Grenadier and verify all cached data is intact
+   (Service Reminder, TPMS).
+4. With ignition OFF: confirm the orange "Ignition Off" banner appears on
+   the main screen. Turn ignition ON — banner disappears.
+5. With engine running: confirm the orange "Engine Running" banner appears
+   and ECU Discovery Details buttons are dimmed gray (not orange).
+6. Tap any feature card while a read is in progress → confirm the
+   "Adapter busy — tap again" toast appears briefly at the bottom.
+
+Please Report
+- Did the adapter setup flow work smoothly on first launch?
+- Did all your cached data reappear after completing setup?
+- Which adapter you are using (BLE device name)
+- Any screen that still shows empty or broken after setup
+- Anything that looks wrong or unexpected
+
+Recommended BLE OBD2 Adapters
+- OBDLink CX
+- vLinker BM+ (vLinker BM-IOS)
+- vLinker MC+ (vLinker MC-IOS)
+
+---
+
 ### v0.8.5 (Alpha-5)
 
-What to Test -- Alpha-5 (v0.8.5)
+What to Test — Alpha-5 (v0.8.5)
 
 Focus: Service Reminder overdue, iPad improvements, iOS 16.6 support
 
@@ -102,10 +167,10 @@ Please Report
 - Anything that looks wrong or unexpected
 
 Recommended BLE OBD2 Adapters (BLE device name)
+- OBDLink CX (OBDLink CX)
 - vLinker BM+ (vLinker BM-IOS)
 - vLinker MC+ (vLinker MC-IOS)
 - Vgate iCar Pro BLE (IOS-Vlink)
-- OBDLink CX (OBDLink CX)
 
 ---
 
@@ -308,3 +373,4 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.4 | -- | 2026-06-20 | Alpha-4 | PDF Diagnosis Report export, Odometer reading (BCM+DDE+HU majority vote), connect flow faster, ECU Discovery + Details stability improvements |
 | 0.8.4 | -- | 2026-06-28 | Alpha-4e | Petrol connect flow fix, CAN Bus Asleep after ECU Health Check fixed, Service Reminder + TPMS faster, Refresh buttons in ECU Info + Health Check detail, Est. Last Service date in Service Reminder |
 | 0.8.5 | -- | 2026-06-29 | Alpha-5 | Service Reminder overdue support, iPad dark mode + full-width screens, Fleet Management fixes, DTC History per-ECU clear, iOS 16.6 support |
+| 0.8.6 | -- | 2026-07-02 | Alpha-6 | First-run adapter onboarding flow, full UI gate until adapter registered, BLE reconnect fix, "Adapter busy" toast, TPMS error message fix, delete individual DTC history entries, ECU Discovery engine-running UX |
