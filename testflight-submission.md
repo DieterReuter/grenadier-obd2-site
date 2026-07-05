@@ -46,6 +46,47 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
+### v0.9.0 (Beta-1)
+
+What to Test — Beta-1 (v0.9.0)
+
+Focus: Welcome to the Beta! This is your first walkthrough of the app — follow the steps
+below in order to see everything it can do for your Grenadier.
+
+Test Steps
+
+1. Scan for your BLE OBD2 adapter, tap it to test compatibility, then tap Add to
+   register it. Tap Connect.
+2. Turn your key to "Key ON, Engine OFF" — do not start the engine.
+3. The app automatically reads your VIN, Odometer, Engine Hours, and Last Engine Run.
+4. Tap "Probe ECUs" to determine all the modules that are online in your Grenadier.
+5. Open the Grenadier Card info ("i" icon), tap "My Grenadier", and fill in the empty
+   fields — this is information only you know as the owner; the app can't read it from
+   the car's ECUs.
+6. Tap "TPMS Information" and read your TPMS sensor details — you'll see all four tyre
+   sensor IDs plus the spare, and their positions.
+7. Tap "Service Reminder" and read your service data. Then tap "Calibrate" and enter the
+   three values shown on your Grenadier's own "Service Interval" screen — the app can't
+   read these directly from the ECUs.
+8. Tap "ECU Health Check" and let the app automatically read all DTCs (fault codes)
+   across your vehicle.
+9. Finally, tap "Export Diagnosis Report" to create a PDF with all the vehicle data you
+   just collected in the steps above.
+
+Please Report
+
+- Which adapter you used (BLE device name)
+- Did each step above work as described, in the order given?
+- Anything confusing, unclear, or that didn't behave as expected
+- Any screen that showed no data or looked broken
+
+Recommended BLE OBD2 Adapters
+- OBDLink CX (OBDLink CX)
+- vLinker BM+ (vLinker BM-IOS)
+- vLinker MC+ (vLinker MC-IOS)
+
+---
+
 ### v0.8.6 (Alpha-6)
 
 What to Test — Alpha-6 (v0.8.6)
@@ -106,7 +147,7 @@ Please Report
 - Anything that looks wrong or unexpected
 
 Recommended BLE OBD2 Adapters
-- OBDLink CX
+- OBDLink CX (OBDLink CX)
 - vLinker BM+ (vLinker BM-IOS)
 - vLinker MC+ (vLinker MC-IOS)
 
