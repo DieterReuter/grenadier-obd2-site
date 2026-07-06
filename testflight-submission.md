@@ -57,7 +57,7 @@ Test Steps
 
 1. Scan for your BLE OBD2 adapter, tap it to test compatibility, then tap Add to
    register it. Tap Connect.
-2. Turn your key to "Key ON, Engine OFF" — do not start the engine.
+2. Turn your key to Key On, Engine Off (KOEO) — do not start the engine.
 3. The app automatically reads your VIN, Odometer, Engine Hours, and Last Engine Run.
 4. Tap "Probe ECUs" to determine all the modules that are online in your Grenadier.
 5. Open the Grenadier Card info ("i" icon), tap "My Grenadier", and fill in the empty
@@ -68,7 +68,7 @@ Test Steps
 7. Tap "Service Reminder" and read your service data. Then tap "Calibrate" and enter the
    three values shown on your Grenadier's own "Service Interval" screen — the app can't
    read these directly from the ECUs.
-8. Tap "ECU Health Check" and let the app automatically read all DTCs (fault codes)
+8. Tap "ECU Health Check", then tap "Read ECU Health Check" to read all DTCs (fault codes)
    across your vehicle.
 9. Finally, tap "Export Diagnosis Report" to create a PDF with all the vehicle data you
    just collected in the steps above.
