@@ -65,9 +65,9 @@ Test Steps
    the car's ECUs.
 6. Tap "TPMS Information" and read your TPMS sensor details — you'll see all four tyre
    sensor IDs plus the spare, and their positions.
-7. Tap "Service Reminder" and read your service data. Then tap "Calibrate" and enter the
-   three values shown on your Grenadier's own "Service Interval" screen — the app can't
-   read these directly from the ECUs.
+7. Tap "Service Reminder", then tap "Read Service Details" to read your service data. Then
+   tap "Calibrate" and enter the three values shown on your Grenadier's own "Service Interval"
+   screen — the app can't read these directly from the ECUs.
 8. Tap "ECU Health Check", then tap "Read ECU Health Check" to read all DTCs (fault codes)
    across your vehicle.
 9. Finally, tap "Export Diagnosis Report" to create a PDF with all the vehicle data you
