@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** July 2, 2026
+**Last updated:** July 11, 2026
 
 ---
 
@@ -46,7 +46,21 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
-### v0.9.0 (Beta-1)
+### v0.9.0 Build 46 (Beta-1b)
+
+What to Test — Beta-1b (v0.9.0, Build 46)
+
+Focus: Same walkthrough as Beta-1 below — this build fixes four issues reported by testers
+using Build 45. If you hit any of these before, please try again on this build.
+
+Fixed in Beta-1b
+- Adapter setup screen could get stuck for testers who had already registered an adapter in
+  an earlier build — no way to reach Connect. Fixed.
+- Service Reminder could hang after "Read Service Details," with no new data even after
+  retrying several times. Fixed — also faster now.
+- The "Calibrate at least once" reminder on Service Reminder no longer keeps showing after
+  you've already calibrated.
+- TPMS Information reads a bit faster.
 
 What to Test — Beta-1 (v0.9.0)
 
@@ -416,3 +430,5 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.4 | -- | 2026-06-28 | Alpha-4e | Petrol connect flow fix, CAN Bus Asleep after ECU Health Check fixed, Service Reminder + TPMS faster, Refresh buttons in ECU Info + Health Check detail, Est. Last Service date in Service Reminder |
 | 0.8.5 | -- | 2026-06-29 | Alpha-5 | Service Reminder overdue support, iPad dark mode + full-width screens, Fleet Management fixes, DTC History per-ECU clear, iOS 16.6 support |
 | 0.8.6 | -- | 2026-07-02 | Alpha-6 | First-run adapter onboarding flow, full UI gate until adapter registered, BLE reconnect fix, "Adapter busy" toast, TPMS error message fix, delete individual DTC history entries, ECU Discovery engine-running UX |
+| 0.9.0 | 45 | 2026-07-08 | Beta-1 | First Beta build actually shipped to TestFlight — DPF Monitor, BLE background recovery, KOFF/KOEO/KOER terminology, MIL indicator, ECU Discovery corruption fix (5 rounds), AT-bus race fixes |
+| 0.9.0 | 46 | 2026-07-11 | Beta-1b | Adapter Onboarding dead end fix, Service Reminder hang fix + DID trim (10→5 HU DIDs, removed 8-ECU research sweep), Calibrate banner hide-after-use, TPMS DID trim (6→4), cross-VIN data leak fix |
