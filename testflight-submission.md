@@ -50,8 +50,9 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 What to Test — Beta-1b (v0.9.0, Build 46)
 
-Focus: Same walkthrough as Beta-1 below — this build fixes four issues reported by testers
-using Build 45. If you hit any of these before, please try again on this build.
+Focus: Same walkthrough as Beta-1 below — this build fixes issues reported by testers
+using Build 45, plus a couple of speed and polish improvements. If you hit any of these
+before, please try again on this build.
 
 Fixed in Beta-1b
 - Adapter setup screen could get stuck for testers who had already registered an adapter in
@@ -61,6 +62,9 @@ Fixed in Beta-1b
 - The "Calibrate at least once" reminder on Service Reminder no longer keeps showing after
   you've already calibrated.
 - TPMS Information reads a bit faster.
+- "Adapter busy" popup no longer appears unexpectedly in the middle of "Probe ECUs."
+- TPMS and Service Reminder both read a bit faster still (removed a couple of unnecessary
+  round trips).
 
 What to Test — Beta-1 (v0.9.0)
 
