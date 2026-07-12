@@ -46,30 +46,18 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ## What to Test (per build, in TestFlight -> Builds)
 
-### v0.9.0 Build TBD (Beta-1c)
+### v0.9.0 Build 47 (Beta-1c)
 
-What to Test — Beta-1c (v0.9.0, Build TBD)
+What to Test — Beta-1c (v0.9.0, Build 47)
 
 Focus: Same walkthrough as Beta-1 below — this build fixes a couple more small issues
 and improves My Grenadier. If you hit any of these before, please try again on this build.
 
 Fixed in Beta-1c
-- My Grenadier: the list of fields (Model Year, Body Style, Engine, etc.) could look
-  cluttered and hard to read, with small labels crowding the values. Fixed — back to a
-  clean, easy-to-read list.
-- My Grenadier: Market now pre-fills automatically based on your phone's region (you can
+- My Grenadier: Country and Market now pre-fills automatically based on your phone's region (you can
   still change it if it's wrong for your car).
-- Diagnosis Report: fixed the "Engine" row on page 1, and the ECU Part Numbers page,
+- Diagnosis Report: fixed the "Engine" row on page 1,
   showing incorrect or garbled text for certain engine variants.
-- ECU Health Check / Diagnosis Report: fixed a rare issue where some ECUs' fault code
-  details could be missing from the report even though the fault count shown was correct.
-  If you've seen this before, please re-run "Read ECU Health Check" and export a new report.
-
-Please Report
-- My Grenadier: does the Market field come up correctly pre-filled for your region?
-- Diagnosis Report: does the Engine row on page 1 look correct for your vehicle?
-- ECU Health Check: after tapping any ECU with a fault count > 0, do you now see the
-  actual fault codes listed (not just the count)?
 
 ### v0.9.0 Build 46 (Beta-1b)
 
