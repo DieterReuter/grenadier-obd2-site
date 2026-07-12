@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** July 11, 2026
+**Last updated:** July 12, 2026
 
 ---
 
@@ -45,6 +45,31 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 ---
 
 ## What to Test (per build, in TestFlight -> Builds)
+
+### v0.9.0 Build TBD (Beta-1c)
+
+What to Test — Beta-1c (v0.9.0, Build TBD)
+
+Focus: Same walkthrough as Beta-1 below — this build fixes a couple more small issues
+and improves My Grenadier. If you hit any of these before, please try again on this build.
+
+Fixed in Beta-1c
+- My Grenadier: the list of fields (Model Year, Body Style, Engine, etc.) could look
+  cluttered and hard to read, with small labels crowding the values. Fixed — back to a
+  clean, easy-to-read list.
+- My Grenadier: Market now pre-fills automatically based on your phone's region (you can
+  still change it if it's wrong for your car).
+- Diagnosis Report: fixed the "Engine" row on page 1, and the ECU Part Numbers page,
+  showing incorrect or garbled text for certain engine variants.
+- ECU Health Check / Diagnosis Report: fixed a rare issue where some ECUs' fault code
+  details could be missing from the report even though the fault count shown was correct.
+  If you've seen this before, please re-run "Read ECU Health Check" and export a new report.
+
+Please Report
+- My Grenadier: does the Market field come up correctly pre-filled for your region?
+- Diagnosis Report: does the Engine row on page 1 look correct for your vehicle?
+- ECU Health Check: after tapping any ECU with a fault count > 0, do you now see the
+  actual fault codes listed (not just the count)?
 
 ### v0.9.0 Build 46 (Beta-1b)
 
@@ -436,3 +461,4 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.8.6 | -- | 2026-07-02 | Alpha-6 | First-run adapter onboarding flow, full UI gate until adapter registered, BLE reconnect fix, "Adapter busy" toast, TPMS error message fix, delete individual DTC history entries, ECU Discovery engine-running UX |
 | 0.9.0 | 45 | 2026-07-08 | Beta-1 | First Beta build actually shipped to TestFlight — DPF Monitor, BLE background recovery, KOFF/KOEO/KOER terminology, MIL indicator, ECU Discovery corruption fix (5 rounds), AT-bus race fixes |
 | 0.9.0 | 46 | 2026-07-11 | Beta-1b | Adapter Onboarding dead end fix, Service Reminder hang fix + DID trim (10→5 HU DIDs, removed 8-ECU research sweep), Calibrate banner hide-after-use, TPMS DID trim (6→4), cross-VIN data leak fix |
+| 0.9.0 | TBD | 2026-07-12 | Beta-1c | My Grenadier appearance fix + Market auto-fill from locale, Diagnosis Report engine-variant display fix, ECU Health Check missing DTC codes fix |
