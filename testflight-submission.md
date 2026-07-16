@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** July 12, 2026
+**Last updated:** July 17, 2026
 
 ---
 
@@ -45,6 +45,36 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 ---
 
 ## What to Test (per build, in TestFlight -> Builds)
+
+### v0.9.0 Build 49 (Beta-2)
+
+What to Test — Beta-2 (v0.9.0, Build 49)
+
+Focus: New feature — ECU Information. Same walkthrough as Beta-1 below, plus one new card to try.
+
+New in Beta-2
+- ECU Information: a new card on the main screen that reads the hardware and software part
+  numbers and version details from every module in your Grenadier — the same identification
+  data a workshop tool reads.
+
+Test Steps (in addition to the Beta-1 walkthrough)
+1. Connect to your Grenadier in Key On, Engine Off (KOEO).
+2. Tap "ECU Information" and let it read.
+3. Check each ECU shows its part numbers / software versions. Please report any ECU that shows
+   no data or looks wrong.
+
+### v0.9.0 Build 48 (Beta-1d)
+
+What to Test — Beta-1d (v0.9.0, Build 48)
+
+Focus: Same walkthrough as Beta-1 below — this build fixes a Service Reminder issue several
+of you reported. If you hit this before, please try again on this build.
+
+Fixed in Beta-1d
+- Service Reminder: "Remaining Distance" and "Remaining Engine Hours" could show "—" after
+  you calibrated, even though your calibration was saved correctly. Fixed.
+- Service Reminder: "Read Service Details" could occasionally do nothing when tapped, with
+  no feedback at all. It now shows a message if a read fails, so you know to try again.
 
 ### v0.9.0 Build 47 (Beta-1c)
 
@@ -450,3 +480,5 @@ All vehicle data collected during testing is fully anonymised — your VIN is ne
 | 0.9.0 | 45 | 2026-07-08 | Beta-1 | First Beta build actually shipped to TestFlight — DPF Monitor, BLE background recovery, KOFF/KOEO/KOER terminology, MIL indicator, ECU Discovery corruption fix (5 rounds), AT-bus race fixes |
 | 0.9.0 | 46 | 2026-07-11 | Beta-1b | Adapter Onboarding dead end fix, Service Reminder hang fix + DID trim (10→5 HU DIDs, removed 8-ECU research sweep), Calibrate banner hide-after-use, TPMS DID trim (6→4), cross-VIN data leak fix |
 | 0.9.0 | 47 | 2026-07-12 | Beta-1c | My Grenadier Country+Market auto-fill from locale (also fixed an appearance regression), Diagnosis Report engine-variant display fix, ECU Health Check missing DTC codes fix (internal — not called out to testers) |
+| 0.9.0 | 48 | 2026-07-13 | Beta-1d | Service Reminder dashes-after-calibration fix, silent read-failure fix (now shows a message) — other work this build (DPF Monitor/Engine Metrics redesigns, ECU Information HU DID, main screen reorder) internal, still Pioneer-Key-gated, not called out to testers |
+| 0.9.0 | 49 | 2026-07-17 | Beta-2 | ECU Information now a standard feature for all testers (B63). Beta-1e work folded in here (Registration Number, PDF share subject/body, DTC-clear fix, etc.) — only ECU Information called out to testers; the rest not mentioned per instruction. DPF Monitor/Engine Metrics remain Pioneer-Key-gated, not mentioned. |
