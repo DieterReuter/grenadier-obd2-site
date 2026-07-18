@@ -94,52 +94,6 @@ Test Steps (in addition to the Beta-1 walkthrough)
 3. Check each ECU shows its part numbers / software versions. Please report any ECU that shows
    no data or looks wrong.
 
-### v0.9.0 Build 48 (Beta-1d)
-
-What to Test — Beta-1d (v0.9.0, Build 48)
-
-Focus: Same walkthrough as Beta-1 below — this build fixes a Service Reminder issue several
-of you reported. If you hit this before, please try again on this build.
-
-Fixed in Beta-1d
-- Service Reminder: "Remaining Distance" and "Remaining Engine Hours" could show "—" after
-  you calibrated, even though your calibration was saved correctly. Fixed.
-- Service Reminder: "Read Service Details" could occasionally do nothing when tapped, with
-  no feedback at all. It now shows a message if a read fails, so you know to try again.
-
-### v0.9.0 Build 47 (Beta-1c)
-
-What to Test — Beta-1c (v0.9.0, Build 47)
-
-Focus: Same walkthrough as Beta-1 below — this build fixes a couple more small issues
-and improves My Grenadier. If you hit any of these before, please try again on this build.
-
-Fixed in Beta-1c
-- My Grenadier: Country and Market now pre-fills automatically based on your phone's region (you can
-  still change it if it's wrong for your car).
-- Diagnosis Report: fixed the "Engine" row on page 1,
-  showing incorrect or garbled text for certain engine variants.
-
-### v0.9.0 Build 46 (Beta-1b)
-
-What to Test — Beta-1b (v0.9.0, Build 46)
-
-Focus: Same walkthrough as Beta-1 below — this build fixes issues reported by testers
-using Build 45, plus a couple of speed and polish improvements. If you hit any of these
-before, please try again on this build.
-
-Fixed in Beta-1b
-- Adapter setup screen could get stuck for testers who had already registered an adapter in
-  an earlier build — no way to reach Connect. Fixed.
-- Service Reminder could hang after "Read Service Details," with no new data even after
-  retrying several times. Fixed — also faster now.
-- The "Calibrate at least once" reminder on Service Reminder no longer keeps showing after
-  you've already calibrated.
-- TPMS Information reads a bit faster.
-- "Adapter busy" popup no longer appears unexpectedly in the middle of "Probe ECUs."
-- TPMS and Service Reminder both read a bit faster still (removed a couple of unnecessary
-  round trips).
-
 What to Test — Beta-1 (v0.9.0)
 
 Focus: Welcome to the Beta! This is your first walkthrough of the app — follow the steps
