@@ -50,8 +50,26 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 What to Test — Beta-2b (v0.9.0, Build 50)
 
-Focus: Same walkthrough as Beta-1 below — this is a maintenance build with one reliability
-improvement, nothing new to try. Everything from Beta-2 stays the same.
+Focus: Same walkthrough as Beta-1 below, plus a new DTC Clear preview in ECU Health Check
+we'd like your feedback on. Everything else from Beta-2 stays the same.
+
+New in Beta-2b — DTC Clear (preview)
+- ECU Health Check now has two "Clear DTCs" actions at the bottom of the screen:
+  • "Clear Standard ECU DTCs" — clears the fault codes on all your normal modules, one after
+    another.
+  • "Clear Drivetrain ECU DTCs" — clears the engine and transmission group (engine ECU,
+    gearbox, and — on diesel — the AdBlue/SCR module) together in one step, because these
+    modules only accept a clear as a group.
+- Each action opens a screen listing the affected ECUs with their current active/total fault
+  counts, asks you to confirm (with an "irreversible operation" warning, same as the existing
+  single-ECU clear), then works through them showing a live spinner on each ECU as it goes —
+  the drivetrain group spins all its modules at once.
+- If you clear one of the drivetrain modules on its own, the app now tells you they clear as a
+  group and points you to the "Clear Drivetrain ECU DTCs" action.
+- IMPORTANT — in this build the clearing runs as a safe simulation only: it reads the fault
+  counts, plays out the full sequence, but does NOT actually erase any codes from your
+  vehicle. Nothing on your car is changed. We're looking for feedback on the flow, wording,
+  and layout — please try both actions and tell us how they read.
 
 Improved in Beta-2b
 - Your saved vehicle data — Service Reminder, TPMS Information, ECU Information, DTC history,
