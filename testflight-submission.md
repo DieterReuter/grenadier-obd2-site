@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** July 17, 2026
+**Last updated:** July 18, 2026
 
 ---
 
@@ -45,6 +45,19 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 ---
 
 ## What to Test (per build, in TestFlight -> Builds)
+
+### v0.9.0 Build 50 (Beta-2b)
+
+What to Test — Beta-2b (v0.9.0, Build 50)
+
+Focus: Same walkthrough as Beta-1 below — this is a maintenance build with one reliability
+improvement, nothing new to try. Everything from Beta-2 stays the same.
+
+Improved in Beta-2b
+- Your saved vehicle data — Service Reminder, TPMS Information, ECU Information, DTC history,
+  and My Grenadier details — now reliably carries over when you update the app to a newer
+  build. Previously a data cache could be dropped on update, forcing a fresh read; that's
+  fixed, so your cached figures stay put across updates.
 
 ### v0.9.0 Build 49 (Beta-2)
 
