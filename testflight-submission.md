@@ -48,21 +48,67 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 
 ### v0.9.0 Build 51 (Beta-2c) — internal testers only
 
+**SELF-CONTAINED — paste only this block into App Store Connect.** From Beta-2c on, the notes
+are one complete walkthrough rather than a per-build delta: a tester arriving fresh sees the
+whole app in order, with no "same as Beta-2b below" chains to follow. The older per-build
+sections underneath are kept as history only and are **not** pasted.
+*(2,645 characters — the field limit is 4,000. Re-count after any edit.)*
+
 What to Test — Beta-2c (v0.9.0, Build 51)
 
-Focus: A small maintenance build. Everything from Beta-2b stays exactly the same — please
-carry on with that walkthrough. Only two wording/layout details changed, both listed below.
+Welcome! Please work through the steps below in order — together they cover
+everything the app can do for your Grenadier.
 
-Changed in Beta-2c
-- Service Reminder now says "Next Service Date" and "Next Service At" (previously "Due Date"
-  and "Due at Odometer"), and the card header reads "Next Service". The same two labels are
-  updated in the Diagnosis Report PDF. Nothing about the values or the calculation changed —
-  if a date or distance looks wrong to you, that's worth reporting.
-- My Grenadier: "Trim" now comes before "Market" in the list. Your saved settings are
-  untouched.
+Test Steps
 
-If you spot anything that behaves differently from Beta-2b beyond these two points, please
-tell us — this build isn't meant to change anything else.
+1. Scan for your BLE OBD2 adapter, tap it to test compatibility, then tap Add to
+   register it. Tap Connect.
+2. Turn your key to Key On, Engine Off (KOEO) — do not start the engine.
+3. The app automatically reads your VIN, Odometer, Engine Hours and Last Engine Run.
+4. Tap "Probe ECUs" to find all modules that are online in your Grenadier.
+5. Open the Grenadier Card info ("i" icon), tap "My Grenadier" and fill in the empty
+   fields — this is information only you know as the owner; the app can't read it
+   from the car's ECUs.
+6. Tap "TPMS Information" to read your tyre sensor details — all four sensor IDs
+   plus the spare, and their positions.
+7. Tap "Service Reminder" → "Read Service Details". Then tap "Calibrate" and enter
+   the values shown on your Grenadier's own Service Interval screen — the app can't
+   read these directly from the ECUs.
+8. Tap "ECU Information" and let it read. It reports the hardware and software part
+   numbers of every module — the same identification data a workshop tool reads.
+   Please report any ECU showing no data or something that looks wrong.
+9. Tap "ECU Health Check" → "Read ECU Health Check" to read all DTCs (fault codes)
+   across your vehicle.
+10. Still in ECU Health Check, try the two "Clear DTCs" actions at the bottom:
+    • "Clear Standard ECU DTCs" — your normal modules, one after another.
+    • "Clear Drivetrain ECU DTCs" — engine, gearbox and (diesel) AdBlue/SCR together,
+      as these only accept a clear as a group.
+    Each lists the affected ECUs with their fault counts, asks you to confirm, then
+    works through them with a spinner per ECU.
+    IMPORTANT — clearing is a safe simulation in this build: it plays out the full
+    sequence but does NOT erase any codes from your car. Please try both and tell us
+    how the flow and layout feel.
+11. Finally, tap "Export Diagnosis Report" to create a PDF containing all the vehicle
+    data you collected above.
+
+Good to know
+- Your saved vehicle data (Service Reminder, TPMS, ECU Information, DTC history,
+  My Grenadier) carries over when you update the app — no need to re-read everything.
+
+Please Report
+- Which adapter you used (BLE device name)
+- Did each step work as described, in the order given?
+- Anything confusing, unclear, or that didn't behave as expected
+- Any screen that showed no data or looked broken
+
+Recommended BLE OBD2 Adapters
+- OBDLink CX (OBDLink CX)
+- vLinker BM+ (vLinker BM-IOS)
+- vLinker MC+ (vLinker MC-IOS)
+
+---
+
+*Sections below are historical per-build notes, superseded by the self-contained block above.*
 
 ### v0.9.0 Build 50 (Beta-2b)
 
