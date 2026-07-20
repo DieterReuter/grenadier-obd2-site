@@ -1,7 +1,7 @@
 # TestFlight Submission Details
 **App:** Grenadier OBD2
 **Bundle ID:** net.perlan.GrenadierOBD
-**Last updated:** July 18, 2026
+**Last updated:** July 20, 2026
 
 ---
 
@@ -45,6 +45,24 @@ Grenadier OBD2 is the first dedicated diagnostic app for INEOS Grenadier owners.
 ---
 
 ## What to Test (per build, in TestFlight -> Builds)
+
+### v0.9.0 Build 51 (Beta-2c) — internal testers only
+
+What to Test — Beta-2c (v0.9.0, Build 51)
+
+Focus: A small maintenance build. Everything from Beta-2b stays exactly the same — please
+carry on with that walkthrough. Only two wording/layout details changed, both listed below.
+
+Changed in Beta-2c
+- Service Reminder now says "Next Service Date" and "Next Service At" (previously "Due Date"
+  and "Due at Odometer"), and the card header reads "Next Service". The same two labels are
+  updated in the Diagnosis Report PDF. Nothing about the values or the calculation changed —
+  if a date or distance looks wrong to you, that's worth reporting.
+- My Grenadier: "Trim" now comes before "Market" in the list. Your saved settings are
+  untouched.
+
+If you spot anything that behaves differently from Beta-2b beyond these two points, please
+tell us — this build isn't meant to change anything else.
 
 ### v0.9.0 Build 50 (Beta-2b)
 
